@@ -40,8 +40,11 @@ chrome.storage.sync.get(["tasks"], (res) => {
 });
 
 function updateTime() {
-  chrome.storage.local.get(["timer"], (res) => {
-    const minutes = `${25 - Math.ceil(res?.timer / 60)}`.padStart(2, "0");
+  chrome.storage.local.get(["timer", "timeOption"], (res) => {
+    const minutes = `${res?.timeOption - Math.ceil(res.timer / 60)}`.padStart(
+      2,
+      "0"
+    );
     let seconds = "00";
 
     if (res?.timer % 60 != 0) {
