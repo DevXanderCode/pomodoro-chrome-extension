@@ -1,0 +1,56 @@
+body {
+  background-color: indianred;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+input#time-option {
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+button#save-btn {
+  /* display: block; */
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  color: indianred;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-self: end;
+  width: 320px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 3px groove whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  align-self: center;
+  height: 300px;
+}
