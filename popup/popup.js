@@ -70,6 +70,7 @@ function renderTask(taskNumber) {
   const text = document.createElement("input");
   text.type = "text";
   text.placeholder = "Enter a text...";
+  text.className = "task-input";
   text.value = tasks[taskNumber];
 
   text.addEventListener("change", () => {
@@ -80,6 +81,7 @@ function renderTask(taskNumber) {
   const deleteBtn = document.createElement("input");
   deleteBtn.type = "button";
   deleteBtn.value = "X";
+  deleteBtn.className = "task-delete";
 
   deleteBtn.addEventListener("click", () => {
     deleteTask(taskNumber);
